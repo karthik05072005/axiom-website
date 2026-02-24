@@ -240,7 +240,7 @@ const LicenseSelector = () => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-border p-7 w-full max-w-2xl">
+    <div className="bg-white rounded-2xl shadow-lg border border-border p-7 w-full">
       {/* Step indicator */}
       <div className="flex flex-col items-center w-full mb-6">
         <div className="flex flex-wrap justify-center gap-2 w-full">

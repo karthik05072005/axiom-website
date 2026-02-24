@@ -13,19 +13,19 @@ const Index = () => {
         <HeroSection />
         
         {/* License Selector Section */}
-        <section className="w-full py-24 bg-gray-50 flex justify-center">
-          <div className="w-full max-w-6xl px-6 lg:px-8 mx-auto text-center">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-800">
+        <section className="w-full py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold">
                 Find Your License Solution
               </h2>
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-600 mt-3">
                 Select your category and facility type to see required licenses.
               </p>
             </div>
             
-            <div className="flex justify-center mt-12">
-              <div className="w-full max-w-5xl">
+            <div className="w-full flex justify-center">
+              <div className="w-full max-w-5xl mx-auto">
                 <LicenseSelector />
               </div>
             </div>
