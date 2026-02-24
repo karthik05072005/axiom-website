@@ -42,11 +42,6 @@ const HeroSection = () => {
                 </p>
               </div>
               
-              {/* License Selection Card */}
-              <div className="mb-8">
-                <HeroLicenseSelector />
-              </div>
-              
               {/* Primary CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
@@ -77,6 +72,13 @@ const HeroSection = () => {
                   <span className="mt-2 text-sm text-muted-foreground font-medium">{s.label}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* 🔥 DROPDOWN SECTION — SEPARATE ROW */}
+          <div className="w-full flex justify-center mt-12">
+            <div className="w-full max-w-4xl">
+              <HeroLicenseSelector />
             </div>
           </div>
         </div>

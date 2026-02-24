@@ -212,7 +212,9 @@ const HeroLicenseSelector = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!selectedCategory || !selectedFacilityType || selectedLicenses.length === 0 || !name || !phone || !email) return;
+    if (!selectedCategory || !selectedFacilityType || selectedLicenses.length === 0 || !name || !phone || !email) {
+      return;
+    }
     
     // Get selected license names
     const selectedLicenseNames = displayedLicenses
@@ -260,11 +262,9 @@ const HeroLicenseSelector = () => {
       </div>
 
       {/* Dropdowns */}
-      <div className="w-full flex justify-center mt-10">
-        <div className="w-full max-w-3xl">
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="relative">
-              <label className="mb-2 block text-sm font-semibold text-foreground">
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div className="relative">
+          <label className="mb-2 block text-sm font-semibold text-foreground">
                 Select Category <span className="text-red-500">*</span>
               </label>
               <select
@@ -300,7 +300,6 @@ const HeroLicenseSelector = () => {
               </select>
             </div>
           </div>
-        </div>
       </div>
 
       {/* License Cards - Show after both dropdowns are selected */}
