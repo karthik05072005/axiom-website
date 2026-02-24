@@ -28,7 +28,7 @@ const ServiceCategories = () => {
               className="card-elevated group p-6"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent text-primary">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gray-200 text-primary">
                 {iconMap[cat.icon]}
               </div>
               <h3 className="mb-3 text-lg font-bold text-foreground">{cat.title}</h3>

@@ -13,8 +13,8 @@ const Index = () => {
         <HeroSection />
         
         {/* License Selector Section */}
-        <section className="w-full py-20 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="w-full py-24 bg-gray-50 flex justify-center">
+          <div className="w-full max-w-6xl px-6 lg:px-8 mx-auto text-center">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-800">
                 Find Your License Solution
@@ -24,8 +24,8 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="flex justify-center">
-              <div className="w-full max-w-4xl">
+            <div className="flex justify-center mt-12">
+              <div className="w-full max-w-5xl">
                 <LicenseSelector />
               </div>
             </div>
