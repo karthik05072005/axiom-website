@@ -17,8 +17,9 @@ const HeroSection = () => {
     <>
       <section className="relative overflow-hidden bg-white">
         <div className="container-section relative py-20 lg:py-24">
-          <div className="grid items-center gap-12 lg:gap-16 lg:grid-cols-2">
-            {/* Left Column: Content + License Selector */}
+          {/* TOP GRID ONLY FOR HEADING + STATS */}
+          <div className="grid items-start gap-12 lg:gap-16 lg:grid-cols-2">
+            {/* Left Column: Content Only */}
             <div className="max-w-2xl">
               <div className="flex items-center gap-2 mb-6">
                 <div className="relative">
@@ -61,7 +62,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right Column: Stats Grid */}
+            {/* Right Column: Stats Grid Only */}
             <div className="grid grid-cols-2 gap-5">
               {stats.map((s, i) => (
                 <div
@@ -74,12 +75,12 @@ const HeroSection = () => {
               ))}
             </div>
           </div>
+        </div>
 
-          {/* 🔥 DROPDOWN SECTION — SEPARATE ROW */}
-          <div className="w-full flex justify-center mt-12">
-            <div className="w-full max-w-4xl">
-              <HeroLicenseSelector />
-            </div>
+        {/* 🔥 DROPDOWN SECTION — FULL WIDTH ROW */}
+        <div className="w-full flex justify-center mt-16 bg-gray-50 py-16">
+          <div className="w-full max-w-5xl px-6 lg:px-12">
+            <HeroLicenseSelector />
           </div>
         </div>
       </section>
