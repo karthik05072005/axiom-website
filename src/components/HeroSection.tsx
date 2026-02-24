@@ -76,13 +76,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
-        {/* 🔥 DROPDOWN SECTION — FULL WIDTH ROW */}
-        <div className="w-full flex justify-center mt-16 bg-gray-50 py-16">
-          <div className="w-full max-w-5xl px-6 lg:px-12">
-            <HeroLicenseSelector />
-          </div>
-        </div>
       </section>
 
       <LeadFormModal open={leadOpen} onOpenChange={setLeadOpen} />
