@@ -163,7 +163,18 @@ const HeroLicenseSelector = () => {
     }
   };
 
-  const availableFacilityTypes = selectedCategory ? facilityTypes[selectedCategory as keyof typeof facilityTypes] : [];
+  const facilityOptions = [
+  "Dental Clinic",
+  "Clinic with Consultation only",
+  "Clinic with consultation and Lab",
+  "Daycare or Observation upto 5 Beds",
+  "Ayurveda therapy Center",
+  "Medical Lab / Diagnostic Only",
+  "Physiotherapy Clinic",
+  "Hospital with OT and All Spec",
+  "Pharmacy",
+  "GST / FSSAI / MSME / other licences"
+];
   
   const getDisplayLicenses = () => {
     if (!selectedCategory || !selectedFacilityType) return [];
@@ -187,10 +198,6 @@ const HeroLicenseSelector = () => {
     setSelectedCategory(category);
     setSelectedFacilityType(""); // Reset facility type when category changes
     setSelectedLicenses([]); // Reset all selections
-  };
-
-  const handleFacilityTypeChange = (facilityType: string) => {
-    setSelectedFacilityType(facilityType);
   };
 
   const handleLicenseToggle = (licenseId: string) => {
@@ -253,45 +260,46 @@ const HeroLicenseSelector = () => {
       </div>
 
       {/* Dropdowns */}
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div className="relative">
-          <label className="mb-2 block text-sm font-semibold text-foreground">
-            Select Category <span className="text-red-500">*</span>
-          </label>
-          <select
-            value={selectedCategory}
-            onChange={(e) => handleCategoryChange(e.target.value)}
-            className="w-full h-14 rounded-lg border-2 border-border bg-white px-4 text-base font-medium text-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:ring focus:ring-offset-0 hover:border-primary/50"
-            required
-          >
-            <option value="">Choose your category...</option>
-            {systemTypes.map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="relative">
-          <label className="mb-2 block text-sm font-semibold text-foreground">
-            Select Facility Type <span className="text-red-500">*</span>
-          </label>
-          <select
-            value={selectedFacilityType}
-            onChange={(e) => handleFacilityTypeChange(e.target.value)}
-            disabled={!selectedCategory}
-            className="w-full h-14 rounded-lg border-2 border-border bg-white px-4 text-base font-medium text-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:ring focus:ring-offset-0 disabled:opacity-50 disabled:cursor-not-allowed hover:border-primary/50"
-            required
-          >
-            <option value="">
-              {selectedCategory ? "Select facility type..." : "Select category first"}
-            </option>
-            {availableFacilityTypes.map((facilityType) => (
-              <option key={facilityType} value={facilityType}>
-                {facilityType}
-              </option>
-            ))}
-          </select>
+      <div className="w-full flex justify-center mt-10">
+        <div className="w-full max-w-3xl">
+          <div className="grid gap-5 sm:grid-cols-2">
+            <div className="relative">
+              <label className="mb-2 block text-sm font-semibold text-foreground">
+                Select Category <span className="text-red-500">*</span>
+              </label>
+              <select
+                value={selectedCategory}
+                onChange={(e) => handleCategoryChange(e.target.value)}
+                className="w-full h-14 rounded-lg border-2 border-border bg-white px-4 text-base font-medium text-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:ring focus:ring-offset-0 hover:border-primary/50"
+                required
+              >
+                <option value="">Choose your category...</option>
+                {systemTypes.map((type) => (
+                  <option key={type} value={type}>
+                    {type}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="relative">
+              <label className="mb-2 block text-sm font-semibold text-foreground">
+                Select Facility Type <span className="text-red-500">*</span>
+              </label>
+              <select
+                value={selectedFacilityType}
+                onChange={(e) => setSelectedFacilityType(e.target.value)}
+                className="w-full h-14 rounded-lg border-2 border-border bg-white px-4 text-base font-medium text-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:ring focus:ring-offset-0 hover:border-primary/50"
+                required
+              >
+                <option value="">Select facility type...</option>
+                {facilityOptions.map((item, index) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
       </div>
 
