@@ -37,6 +37,7 @@ const Contact = () => {
                     <div>
                       <p className="text-sm font-semibold text-foreground">Phone</p>
                       <p className="text-sm text-muted-foreground">+91 98867 09463</p>
+                      <p className="text-sm text-muted-foreground">+91 98861 09466</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -58,6 +59,14 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Business Info */}
+              <div className="card-elevated p-6">
+                <h3 className="mb-3 text-lg font-semibold text-foreground">About Our Business</h3>
+                <p className="text-sm text-muted-foreground">
+                  We own both Pronto360 and AXIOM360 AI business, providing comprehensive solutions for all your business requirements. With years of experience in business registration, legal services, tax compliance, and licensing, we offer end-to-end support for entrepreneurs and established businesses alike.
+                </p>
               </div>
 
               {/* WhatsApp CTA */}

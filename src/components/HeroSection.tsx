@@ -39,7 +39,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  From company registration to tax compliance — get expert assistance for all your business needs with custom solutions.
+                  From company registration to tax compliance — get expert assistance for all your business needs with custom solutions. We own both Pronto360 and AXIOM360 AI business, providing comprehensive end-to-end support for entrepreneurs and established businesses alike.
                 </p>
               </div>
               
