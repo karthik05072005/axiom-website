@@ -45,7 +45,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-foreground">Email</p>
-                      <p className="text-sm text-muted-foreground">hello@pronto360.com</p>
+                      <p className="text-sm text-muted-foreground">hello@axiom360ai.com</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -62,7 +62,7 @@ const Contact = () => {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/919886709463?text=Hi%20PRONTO360%2C%20I%20need%20help%20with%20a%20service."
+                href="https://wa.me/919886709463?text=Hi%20AXIOM360%20AI%2C%20I%20need%20help%20with%20a%20service."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-lg bg-secondary px-6 py-4 text-sm font-semibold text-secondary-foreground transition-all hover:opacity-90"

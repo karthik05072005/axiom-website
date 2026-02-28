@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
       <div className="container-section">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
-            Why Choose PRONTO360?
+            Why Choose AXIOM360 AI?
           </h2>
           <p className="text-lg text-muted-foreground">
             We make business compliance simple, fast, and reliable.

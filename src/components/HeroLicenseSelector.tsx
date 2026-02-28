@@ -222,7 +222,7 @@ const HeroLicenseSelector = () => {
       .map(license => `• ${license.name}`)
       .join('%0A');
     
-    const message = `Hi PRONTO360,%0A%0AI need help with the following licenses:%0A%0A📋 *Category:* ${selectedCategory}%0A🔧 *Facility Type:* ${selectedFacilityType}%0A%0A *Required Licenses:*%0A${selectedLicenseNames}%0A%0A *Contact Details:*%0A• Name: ${name}%0A• Phone: ${phone}%0A• Email: ${email}%0A%0APlease let me know the next steps. Thank you!`;
+    const message = `Hi AXIOM360 AI,%0A%0AI need help with the following licenses:%0A%0A📋 *Category:* ${selectedCategory}%0A🔧 *Facility Type:* ${selectedFacilityType}%0A%0A *Required Licenses:*%0A${selectedLicenseNames}%0A%0A *Contact Details:*%0A• Name: ${name}%0A• Phone: ${phone}%0A• Email: ${email}%0A%0APlease let me know the next steps. Thank you!`;
     
     const whatsappUrl = `https://wa.me/919886709463?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -479,7 +479,7 @@ const HeroLicenseSelector = () => {
                 </span>
               </button>
               <a
-                href="https://wa.me/919886709463?text=Hi%20PRONTO360%2C%20I%20need%20help%20with%20a%20license."
+                href="https://wa.me/919886709463?text=Hi%20AXIOM360 AI%2C%20I%20need%20help%20with%20a%20license."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex-1 flex items-center justify-center gap-2 bg-white border border-primary text-primary px-8 py-4 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"

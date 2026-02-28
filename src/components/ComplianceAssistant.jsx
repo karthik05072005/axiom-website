@@ -46,7 +46,7 @@ const ComplianceAssistant = ({ isOpen, onClose }) => {
     {
       id: 1,
       type: "assistant",
-      content: "Welcome to PRONTO360 Compliance Assistant. Let's understand your clinic setup to determine required approvals.",
+      content: "Welcome to AXIOM360 AI Compliance Assistant. Let's understand your clinic setup to determine required approvals.",
       timestamp: new Date()
     }
   ];
@@ -543,7 +543,7 @@ const ComplianceAssistant = ({ isOpen, onClose }) => {
               <Bot className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h2 className="text-lg font-bold text-gray-900">PRONTO360 Compliance Assistant</h2>
+              <h2 className="text-lg font-bold text-gray-900">AXIOM360 AI Compliance Assistant</h2>
               <p className="text-sm text-gray-600">Intelligent License Recommendation System</p>
             </div>
           </div>

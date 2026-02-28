@@ -277,7 +277,7 @@ export const testimonials = [
   {
     name: "Rajesh Kumar",
     company: "TechStart Solutions Pvt. Ltd.",
-    text: "PRONTO360 made our company registration incredibly smooth. The team handled everything from name approval to incorporation in just 8 days!",
+    text: "AXIOM360 AI made our company registration incredibly smooth. The team handled everything from name approval to incorporation in just 8 days!",
     rating: 5,
   },
   {
@@ -295,7 +295,7 @@ export const testimonials = [
   {
     name: "Sneha Reddy",
     company: "CloudNine Exports",
-    text: "PRONTO360 helped us with GST registration and IEC code. Their expert consultation and service quality is outstanding.",
+    text: "AXIOM360 AI helped us with GST registration and IEC code. Their expert consultation and service quality is outstanding.",
     rating: 4,
   },
 ];

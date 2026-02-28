@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                hello@pronto360.com
+                hello@axiom360ai.com
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-primary" />
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-300">
-          © {new Date().getFullYear()} PRONTO360. All rights reserved.
+          © {new Date().getFullYear()} AXIOM360 AI. All rights reserved.
         </div>
       </div>
     </footer>
