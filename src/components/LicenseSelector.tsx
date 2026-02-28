@@ -237,6 +237,7 @@ const LicenseSelector = () => {
     setPhone("");
     setEmail("");
   }, 3000);
+  };
 
   return (
   <div className="bg-white rounded-2xl shadow-lg border border-border p-7 w-full">
