@@ -523,14 +523,4 @@ return (
   </div>
 );
 
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-              </a>
-            </div>
-          </form>
-        </div>
-      )}
-    </div>
-  );
-};
-
 export default LicenseSelector;
