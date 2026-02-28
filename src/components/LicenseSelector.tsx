@@ -266,9 +266,8 @@ const handleSubmit = (e: React.FormEvent) => {
     setPhone("");
     setEmail("");
   }, 3000);
-};
 
-return (
+  return (
   <div className="bg-white rounded-2xl shadow-lg border border-border p-7 w-full">
     {/* Step indicator */}
     <div className="flex flex-col items-center w-full mb-6">
@@ -522,5 +521,6 @@ return (
     )}
   </div>
 );
+};
 
 export default LicenseSelector;
