@@ -10,10 +10,10 @@ const Footer = () => {
           <div>
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-xs font-black text-primary-foreground">P</span>
+                <span className="text-xs font-black text-primary-foreground">A</span>
               </div>
               <span className="text-lg font-extrabold text-white">
-                PRONTO<span className="text-primary">360</span>
+                AXIOM<span className="text-primary">360 AI</span>
               </span>
             </div>
             <p className="mb-4 text-sm text-gray-300">

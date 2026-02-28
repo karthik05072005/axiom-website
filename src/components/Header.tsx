@@ -26,10 +26,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <span className="text-sm font-black text-primary-foreground">P</span>
+              <span className="text-sm font-black text-primary-foreground">A</span>
             </div>
             <span className="text-xl font-extrabold tracking-tight text-foreground">
-              PRONTO<span className="text-primary">360</span>
+              AXIOM<span className="text-primary">360 AI</span>
             </span>
           </Link>
 
