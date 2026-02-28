@@ -217,43 +217,14 @@ const LicenseSelector = () => {
     }
     
     // Get selected license names
-
-const displayedLicenses = getDisplayLicenses();
-
-// Debug: Check if licenses are being rendered multiple times
-console.log("Rendering licenses...", displayedLicenses.length, "licenses");
-
-const handleCategoryChange = (category: string) => {
-  setSelectedCategory(category);
-  setSelectedFacilityType(""); // Reset facility type when category changes
-  setSelectedLicenses([]); // Reset all selections
-};
-
-const handleLicenseToggle = (licenseId: string) => {
-  setSelectedLicenses(prev => {
-    if (prev.includes(licenseId)) {
-      return prev.filter(id => id !== licenseId);
-    } else {
-      return [...prev, licenseId];
-    }
-  });
-};
-
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-  if (!selectedCategory || !selectedFacilityType || selectedLicenses.length === 0 || !name || !phone || !email) {
-    return;
-  }
-
-  // Get selected license names
-  const selectedLicenseNames = displayedLicenses
+    const selectedLicenseNames = displayedLicenses
     .filter(license => selectedLicenses.includes(license.id))
     .map(license => `• ${license.name}`)
     .join('%0A');
 
   const message = `Hi AXIOM360 AI,%0A%0AI need help with the following licenses:%0A%0A📋 *Category:* ${selectedCategory}%0A🔧 *Facility Type:* ${selectedFacilityType}%0A%0A *Required Licenses:*%0A${selectedLicenseNames}%0A%0A *Contact Details:*%0A• Name: ${name}%0A• Phone: ${phone}%0A• Email: ${email}%0A%0APlease let me know the next steps. Thank you!`;
 
-  const whatsappUrl = `https://wa.me/919886709463?text=${message}`;
+    const whatsappUrl = `https://wa.me/919886709463?text=${message}`;
   window.open(whatsappUrl, '_blank');
 
   setSubmitted(true);
